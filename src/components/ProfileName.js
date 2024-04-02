@@ -1,9 +1,10 @@
+import './Style.css'
 import React from "react";
 
 function ProfileName() {
   return (
-    <div>
-    <h1>John Doe</h1>
+    <div className="item">
+    <h1 className="item">John Doe</h1>
     </div>
     );
     

@@ -3,7 +3,7 @@ import Foodblog from './components/Foodblog';
 
 function App() {
   return (
-    <div>
+    <div >
       <Foodblog/>
       
     </div>
