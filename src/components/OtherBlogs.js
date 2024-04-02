@@ -1,3 +1,4 @@
+import MyButton from './MyButton';
 import './Style.css'
 import React from "react";
 
@@ -23,6 +24,7 @@ function OtherBlogs() {
     <div className="item">
 
       <ul>{blogList}</ul>
+      <MyButton />
 
     </div>
 
@@ -30,5 +32,6 @@ function OtherBlogs() {
  );
 
 }
+
 
 export default OtherBlogs;
