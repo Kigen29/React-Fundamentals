@@ -5,17 +5,17 @@ import './Style.css';
 export default function Page() {
   return (
     <div className = "item">
-        <Section level={1}>
+           <Section>
       <Heading>Title</Heading>
-      <Section level={2}>
+      <Section>
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
-        <Section level={3}>
+        <Section>
           <Heading>Sub-heading</Heading>
           <Heading>Sub-heading</Heading>
           <Heading>Sub-heading</Heading>
-          <Section level={4}>
+          <Section>
             <Heading>Sub-sub-heading</Heading>
             <Heading>Sub-sub-heading</Heading>
             <Heading>Sub-sub-heading</Heading>
