@@ -3,25 +3,27 @@ import React from "react";
 
 
 export default function Counter() {
+
+    const [count,setCount] = useState(0);
+
+    function handleClick() {
+        setCount(count + 1);
+    }
+
+
   return (
     <div className='item'> 
-      <h1>Counters that update separately</h1>
-      <MyButton />
+      <h1>Counters that update together</h1>
+      <MyButton count = {count} onClick = {handleClick}/>
       <br />
-      <MyButton />
+      <MyButton count = {count} onClick = {handleClick}/>
     </div>
   );
 }
 
-function MyButton() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count + 1);
-  }
-
+function MyButton({count, onClick}) {
   return (
-    <button onClick={handleClick}>
+    <button onClick={onClick}>
       Clicked {count} times
     </button>
   );
